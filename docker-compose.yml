@@ -1,0 +1,9 @@
+services:
+  form:
+    build: .
+    container_name: form_pendaftaran
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    restart: always
